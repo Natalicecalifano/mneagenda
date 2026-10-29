@@ -1,0 +1,2 @@
+ALTER TABLE public.bookings DROP CONSTRAINT IF EXISTS bookings_visit_type_allowed;
+ALTER TABLE public.bookings ADD CONSTRAINT bookings_visit_type_allowed CHECK (visit_type IN ('Ciclo Interno','Arestas','Janela das Possibilidades','Iniciar','P1','P2'));
